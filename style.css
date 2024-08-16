@@ -1,51 +1,48 @@
-.calc {
-    width: 300px;
-    margin: auto;
-    min-height: 400px;
-    background: aqua;
-    margin-left: 600px;
-    margin-top: 160px;
-    border: 4px solid black;
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
-.screen {
-    padding: 5px;
-    text-align: center;
-    color: rgb(7, 2, 2);
+.container{
+    
+    border:3px solid black;
+    position:relative;
+    max-width:250px;
+    width:500px;
+    border-radius:12px;
+    padding:10px 20px 20px;
+    background: rgb(75, 72, 72);
+    box-shadow:0 5px 10px rgba(0,0,0,10);
 }
+.display{
+    height:70px;
+    width:100%;
+    outline:none;
+    border:none;
+    text-align:right;
+    margin-bottom:10px;
+    font-size:25px;
+    color:#000e1a;
 
-placeholder{
-    font-size: xx-large;
 }
+.buttons{
+  
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4,1fr);
 
-.calc-button{
-    display: table;
+    .operator1{
+        background-color: crimson;
+        color:white;
+    }
 }
-input{
-    height: 67px;
-    width: 216px;
-}
-
-
-.calc-button {
-button {
-    display: table-cell;
-    width: 75px;
-    background:white;
-    color:black;
-    height: 70px;
-    font-size: 13px;
-    border-color:aqua;
-    border-width: 1px solid #fff;
-}
-.opt1{
-    width: 75px;
-    height: 70px;
-    background-color: red;
-    color: white;
-}
-
-button:hover {
-    background: #3e4b5c;
-}
+.buttons button{
+    padding:10px;
+    border-radius: 6px;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    background-color:#2f9fff;
 }
